@@ -20,6 +20,7 @@ class ClikingServiceProvider extends ServiceProvider
         $request = $this->app->request;
         $tracking = new Tracking();
         $tracking->tracking($request);
+        $this->loadViewsFrom(__DIR__.'/views', 'cliking');
     }
 
     public function register() {

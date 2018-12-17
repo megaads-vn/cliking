@@ -34,6 +34,8 @@ class Tracking {
                      $table->date('day');
                      $table->dateTime('created_at');
                      $table->index(['ip', 'day']);
+                     $table->index(['ip']);
+                     $table->index(['day']);
                 });
             }
 

@@ -4,7 +4,7 @@
 **add in file composer.json**
 ```javascript
 "require": {
-	"megaads/cliking": "^1.0"
+	"megaads/cliking": "^1.1"
 }
 ```
 ## Usage:
@@ -15,3 +15,7 @@
     Megaads\Cliking\ClikingServiceProvider::class
 ];
 ```
+
+**Access report**
+
+`http://domain.name/logger`
