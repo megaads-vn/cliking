@@ -27,6 +27,7 @@ class ReportController extends BaseController
         ->groupBy('ip')
         ->select('ip')
         ->addSelect(DB::raw('count(*) as count'))
+        ->orderBy('count', 'desc')
         ->paginate(100);
 
         return view('cliking::logger-by-day', compact(['accessGroup', 'day']));
